@@ -1,0 +1,116 @@
+
+.header {
+    background-color: #E0DD1D;
+    color: #fff;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px; 
+    background-image: url('/resources/9kGKEdwY_u-8yHY1U3zZG-transformed.png'); /* Укажите путь к вашему изображению логотипа */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navigation-image {
+    margin-right: 20px;
+    width: 40px; /* Примерные размеры */
+    height: 50px; /* Примерные размеры */
+    background-image: url('/resources/burger-menu-svgrepo-com.svg'); /* Укажите путь к вашему изображению для навигации */
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer; 
+}
+
+.main {
+        padding-top: 100px; /* Увеличиваем отступ сверху */
+        background-image: url('/resources/output-onlinepngtools\ \(2\).png'); /* Ссылка на фоновое изображение */
+        background-size: cover; /* Сохраняем размер фонового изображения */
+        background-repeat: no-repeat; /* Запрещаем повторение фонового изображения */
+        background-position: center; /* Центрируем фоновое изображение */
+        display: flex;
+        height: 844px;
+    }
+
+  
+
+    footer {
+        background-color: #000000;
+        color: #fff;
+        width: 100%;
+        height: 150px;
+        bottom: 0;
+    }
+
+    .footer-text {
+        color: white;
+        margin-left: 15px;
+        font-size: 12px;
+        margin-top: -5px;
+    }
+    
+    .footer-text.bold {
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 5px;
+        color: #22c770;
+    }
+    
+    .footer-text.small {
+        right: 30px;
+        font-size: 10px;
+        color: white;
+        margin-top: 55px;
+        position: absolute;
+    }
+    
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+        background-image: url('/resources/лого.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: none;
+        position: absolute;
+        margin-top: 20px;
+        right: 50px;
+    }
+    
+    .social-media {
+        position: absolute;
+        color: #22c770;
+        font-weight: bold;
+        font-size: 16px;
+       margin-left: 15px;
+        margin-top: 0px;
+    }
+    
+    .social-icons {
+        margin-left: 15px;
+        margin-top: 45px;
+    }
+    
+    .social-icons img {
+        margin-right: 35px;
+    }
+

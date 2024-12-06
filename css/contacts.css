@@ -1,0 +1,280 @@
+.header {
+    background-color: #E0DD1D;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.header .menu ul li.active a {
+    border-bottom: 2px solid #000; /* Линия под текстом */
+    padding-bottom: 5px; /* Отступ для линии */
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 30px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.menu ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0px;
+}
+
+.menu ul li:last-child {
+    margin-right: 770px;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    pointer-events: none;
+}
+
+.footer-text {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-left: 195px;
+}
+
+.footer-text.bold {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    color: #22c770;
+}
+
+.footer-text.small {
+    font-size: 12px;
+    color: white;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('/resources/лого.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media {
+    position: absolute;
+    color: #22c770;
+    font-weight: bold;
+    font-size: 18px;
+    right: 215px;
+    top: 35px;
+}
+
+.social-icons {
+    position: absolute;
+    top: 80px;
+    right: 180px;
+}
+
+.social-icons img {
+    margin-right: 40px;
+}
+
+.main {
+    width: 100%;
+    height: 900px;
+    padding-top: 240px;
+    background-image: url('/resources/output-onlinepngtools\ \(2\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 200px;
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.contact-info{
+    text-align: center;
+}
+
+#text1{
+    margin-left: 200px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#Addres{
+    margin-left: 390px;
+    font-size: 20px;
+    position: center;
+    text-align: center; 
+}
+
+#text2{
+    margin-left: 200px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+#Time{
+    margin-left: 395px;
+    font-size: 20px;
+    position: center;
+    text-align: center;
+}
+#times{
+    margin-left: 200px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+#PhNumber{
+    margin-left: 400px;
+    font-size: 20px;
+    position: center;
+}
+#Number{
+    margin-left: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+#Em{
+    margin-left: 400px;
+    font-size: 20px;
+    position: center;
+    text-align: center;
+}
+#e-mail{
+    margin-left: 400px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#title2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+#title3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 400px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#mess{
+    text-align: center;
+    margin-left: 395px;
+}
+
+#map {
+    width: 700px; /* Ширина контейнера */
+    height: 600px; /* Высота контейнера */
+    border: 1px solid black;
+    margin-left: 200px;
+   
+}
+
+body,
+h1,
+p,
+footer {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    background-image: url('/resources/9kGKEdwY_u-8yHY1U3zZG-transformed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    margin-left: 180px;
+   
+}
+
+@media screen  {
+    .desktop {
+      overflow-x: hidden;
+  }
+  }
+  @media screen  {
+    .laptop {
+      transform: scale(0.8);
+      transform-origin: top left;
+      width: 125%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+  }
+  }
+  @media screen  {
+    .laptop2 {
+      transform: scale(0.67); 
+      transform-origin: top left;
+      width: 150%; 
+      height: 100vh; 
+      margin: 0; 
+      padding: 0; 
+      overflow-x: hidden; 
+    }
+}

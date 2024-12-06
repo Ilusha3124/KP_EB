@@ -1,0 +1,265 @@
+.header {
+    background-color: #E0DD1D;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.header .menu ul li.active a {
+    border-bottom: 2px solid #000; /* Линия под текстом */
+    padding-bottom: 5px; /* Отступ для линии */
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 30px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.menu ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0px;
+}
+
+.menu ul li:last-child {
+    margin-right: 770px;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    pointer-events: none;
+}
+
+.footer-text {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-left: 195px;
+}
+
+.footer-text.bold {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    color: #22c770;
+}
+
+.footer-text.small {
+    font-size: 12px;
+    color: white;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('/resources/лого.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media {
+    position: absolute;
+    color: #22c770;
+    font-weight: bold;
+    font-size: 18px;
+    left: 1450px;
+    top: 35px;
+}
+
+.social-icons {
+    position: absolute;
+    top: 80px;
+    right: 180px;
+}
+
+.social-icons img {
+    margin-right: 40px;
+}
+
+.main {
+    width: 100%;
+    height: 1300px;
+    padding-top: 240px;
+    background-image: url('/resources/output-onlinepngtools\ \(2\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 200px;
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* расстояние между блоками */
+}
+
+/* Стили для контента */
+.block-content {
+    flex: 1; /* чтобы контент занимал всю доступную ширину */
+}
+
+/* Стили для заголовков */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Стили для текста */
+p {
+    font-size: 16px;
+    width: 80%;
+}
+
+/* Применяем flex-direction: column для .main */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Добавляем отступ сверху для блоков, кроме первого */
+.block:not(:first-child) {
+    margin-top: 100px;
+}
+
+/* Стили для конкретных элементов с использованием ID */
+#image1, #image2, #image3 {
+    width: 500px;
+    height: 310px;
+    margin-left: 200px;
+    border: 1px solid black;
+}
+
+#title1 {
+    margin-top: -110px;
+    margin-left: 40px;
+}
+
+#text1{
+    margin-left: 40px; 
+}
+
+#title1_1 {
+    margin-left: 40px;
+}
+
+#text1_1{
+    margin-left: 40px; 
+}
+#text1_2{
+    margin-left: 40px; 
+    margin-top: 10px;
+}
+
+#title2 {
+    margin-left: 40px;
+    margin-top: -160px;
+}
+
+#text2{
+    margin-left: 40px; 
+}
+#text2_1{
+    margin-left: 40px; 
+    margin-top: 25px;
+}
+
+#title3 {
+    margin-left: 40px;
+    margin-top: -160px;
+}
+
+#text3{
+    margin-left: 40px; 
+}
+#text3_1{
+    margin-left: 40px; 
+    margin-top: 25px;
+}
+
+body,
+h1,
+p,
+footer {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    background-image: url('/resources/9kGKEdwY_u-8yHY1U3zZG-transformed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    margin-left: 180px;
+   
+}
+
+@media screen  {
+    .desktop {
+      overflow-x: hidden;
+  }
+  }
+  @media screen  {
+    .laptop {
+      transform: scale(0.8);
+      transform-origin: top left;
+      width: 125%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+  }
+  }
+  @media screen  {
+    .laptop2 {
+      transform: scale(0.67); 
+      transform-origin: top left;
+      width: 150%; 
+      height: 100vh; 
+      margin: 0; 
+      padding: 0; 
+      overflow-x: hidden; 
+    }
+}

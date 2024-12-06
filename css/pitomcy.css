@@ -1,0 +1,387 @@
+.header {
+    background-color: #E0DD1D; /*#C9C621*/
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;
+}
+.header .menu ul li.active a {
+    border-bottom: 2px solid #000; /* Линия под текстом */
+    padding-bottom: 5px; /* Отступ для линии */
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 30px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.menu ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0px;
+}
+
+.menu ul li:last-child {
+    margin-right: 770px;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    pointer-events: none;
+}
+
+.footer-text {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-left: 195px;
+}
+
+.footer-text.bold {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    color: #22c770;
+}
+
+.footer-text.small {
+    font-size: 12px;
+    color: white;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('/resources/лого.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media {
+    position: absolute;
+    color: #22c770;
+    font-weight: bold;
+    font-size: 18px;
+    right: 215px;
+    top: 35px;
+}
+
+.social-icons {
+    position: absolute;
+    top: 80px;
+    right: 180px;
+}
+
+.social-icons img {
+    margin-right: 40px;
+}
+
+.main {
+    height: 1000px; /* Автоматическая высота в зависимости от содержимого */
+    padding-top: 240px;
+    background-image: url('/resources/output-onlinepngtools\ \(2\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-direction: column; /* Размещаем элементы в колонку */
+     /* Центрируем все элементы по горизонтали */
+}
+
+#first-text {
+    text-align: center;  
+    width: 100%;
+}
+
+ #second-text {
+    margin-top: 50px;
+    width: 40%;
+    margin-left: 555px;
+    text-align: center;
+}
+
+.filter_search{
+    display: flex; 
+  margin-top: 40px;
+}
+
+.search-container {
+   margin-left: auto;
+   margin-right: 235px;
+}
+
+#search-input {
+    width: 87%; /* Сделаем ширину 80% */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #22c770;
+    border-radius: 8px;
+}
+
+#search-input:hover {
+    border-color: #666; /* Цвет границы при наведении */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+#search-input:focus {
+    outline: none; /* Убираем обводку при фокусе */
+    border-color: #333; /* Цвет границы при фокусе */
+    background-color: #fff; /* Цвет фона при фокусе */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Тень при фокусе */
+}
+
+.filter-container {
+   margin-left: 270px;
+}
+
+.filter-container label {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 10px;
+}
+
+#filter-select {
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #22c770;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#filter-select:hover {
+    border-color: #666;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#filter-select:focus {
+    outline: none;
+    border-color: #333;
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Создаем 3 столбца */
+    gap: 150px; /* Уменьшил промежутки между элементами для более компактного вида */
+    max-width: 1200px; /* Максимальная ширина блока */
+    width: 100%; /* Устанавливаем ширину 100% */
+    margin: 20px auto; /* Центрируем по горизонтали */
+    margin-right: 390px;
+}
+
+.photo {
+    width: 350px; /* Занимаем 100% ширины ячейки */
+    height: 250px; /* Высота автоматически подстраивается */
+    position: relative; /* Позиционирование элемента */
+}
+
+.photo img {
+    width: 100%; /* Изображение займет всю доступную ширину блока .photo */
+    height: 100%; /* Изображение займет всю доступную высоту блока .photo */
+    object-fit: cover; /* Масштабируем изображение, чтобы оно полностью заполнило блок */
+    border: 1px solid black; /* Граница для изображения (для наглядности) */
+}
+.photo:hover {
+    cursor: pointer; /* Можно изменить курсор при наведении */
+  }
+
+.overlay {
+    position: absolute; /* Позиционирование элемента */
+    bottom: -87px; /* Положение снизу */
+    left: 0; /* Положение слева */
+    width: 100.5%; /* Ширина блока */
+    background-color: rgba(0, 0, 0, 0.7) ; /* rgba(0, 0, 0, 0.7) */
+    padding: 15px; /* Отступы внутри блока */
+    box-sizing: border-box; /* Размеры блока включая границу и отступы */
+    border-bottom-left-radius: 10px; /* Закругление углов */
+    border-bottom-right-radius: 10px; /* Закругление углов */
+    border-top: 8px solid #22c770;
+}
+
+.overlay h2{
+    color: white; /* Цвет текста */
+    margin: 0; /* Убираем внешние отступы */ 
+    font-size: 18px;
+}
+.overlay p {
+    color: white; /* Цвет текста */
+    margin: 0; /* Убираем внешние отступы */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.heart-checkbox {
+    display: none;
+}
+
+.heart-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('/resources/1.svg'); /* Изображение сердечка */
+    background-size: cover;
+    cursor: pointer;
+    border: none; /* Убираем границу */
+    outline: none; /* Убираем выделение при фокусе */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+    background-color: transparent; /* Прозрачный фон */
+}
+
+.heart-checkbox:checked + .heart-label {
+    background-image: url('/resources/2.svg'); /* Изображение сердечка при нажатии */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh auto; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+  }
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content img {
+    max-width: 350px; /* Устанавливаем максимальную ширину изображения равной ширине контейнера */
+    height: 250px; /* Автоматически вычисляем высоту изображения для сохранения пропорций */
+    border: 1px solid black;
+}
+
+#modal-title {
+    margin-top: 0; /* Убираем верхний отступ */
+}
+
+#modal-description {
+    margin-bottom: 0; /* Убираем нижний отступ */
+}
+#modal-description-wrapper {
+    margin-top: 10px; /* Отступ между кратким и полным описанием */
+}
+
+
+body,
+p,
+footer, header {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+.logo {
+    width: 75px;
+    height: 75px;
+    background-image: url('/resources/9kGKEdwY_u-8yHY1U3zZG-transformed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    margin-left: 180px;
+   
+}
+
+@media screen  {
+    .desktop {
+      overflow-x: hidden;
+  }
+  }
+  @media screen  {
+    .laptop {
+      zoom: 0.8;
+      transform-origin: top left;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+  }
+  }
+  @media screen  {
+    /* Стили для корректного отображения при масштабировании 150% */
+    .laptop2 {
+      zoom: 0.67; /* Поскольку масштабирование составляет 150%, ширина страницы должна быть 150%, а высота 67% от высоты экрана */
+      transform-origin: top left;
+      height: 100vh; /* Занимаем 100% высоты окна браузера */
+      margin: 0; /* Убираем внешние отступы */
+      padding: 0; /* Убираем внутренние отступы */
+      overflow-x: hidden; /* Убираем горизонтальный скролл */
+    }
+  }
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="/css/about_us.css"> 
+    <link rel="stylesheet" href="/css/log_in_out.css"> 
+    <link rel="icon" href="/resources/лого.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="/html/main page.html">
+            <div class="logo"></div>
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="/html/main page.html">Главная</a></li>
+                <li><a href="/html/pitomcy.html">Питомцы</a></li>
+                <li><a href="/html/howHelp.html">Как помочь</a></li>
+                <li><a href="/html/contacts.html">Контакты</a></li>
+                <li class="active"><a href="/html/about_us.html">О нас</a></li>
+
+            </ul>
+            <i class="fa-regular fa-circle-user" id="log" style="cursor: pointer;"></i>
+        </nav>
+        <span id="userStatus" class="user-status" style="display: none;">Гость</span>
+    </header>
+    
+<!-- Модальное окно для авторизации -->
+<div id="authModal" class="custom-modal">
+    <div class="custom-modal-content">
+        <span class="custom-close-btn-auth">&times;</span> <!-- Класс для кнопки закрытия authModal -->
+        <h2 id="auth">Авторизация</h2>
+        <form id="authForm">
+            <label for="authEmail" class="text_log_ema">Email:</label>
+            <input type="email" id="authEmail" name="email" placeholder="Введите ваш Email" required>
+            <br><br>
+            <label for="authPassword" class="text_log_pass">Пароль:</label>
+            <input type="password" id="authPassword" name="password" placeholder="Пароль" required>
+            <br><br>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+<!-- Модальное окно для управления аккаунтом -->
+<div id="userModal" class="custom-modal" style="display:none;">
+    <div class="custom-modal-content">
+        <span class="custom-close-btn-user">&times;</span> <!-- Класс для кнопки закрытия userModal -->
+        <h2 id="user_inf">Информация о пользователе</h2>
+        <p id="userName">Имя пользователя</p>
+        <p id="userEmail">Email: </p> <!-- Новый элемент для отображения email -->
+        <h2 id="korzina">Корзина лайков</h2>
+        <img src="/resources/add_to_favorites_8ucq01fczrmu.svg" id= "iconnn" alt="Icon" width="45" height="45">
+        <ul id="likedPetsList"></ul>
+        <button id="logoutButton">Выйти</button>
+    </div>
+</div>
+    <div class="main">
+        <div class="block1">
+            <h1 id="first">Наши успехи</h1>
+            <p id="main-text"><b>Мы - команда</b> преданных людей, объединенных общей целью - 
+                заботиться о безнадзорных котах и собаках, и помогать им найти
+                любящие семьи. <br><br>С каждым днем мы стремимся сделать мир лучше для
+                наших пушистых друзей, создавая безопасное и заботливое
+                окружение.</p>
+            <img src="/resources/O_NAS1.jpg" alt="О нас 1" id="main-image">
+        </div>
+        <div class="block2">
+            <h1 class="zag">Миссия</h1>
+            <p class="text2">Наш мемный приют за всё время своей работы уже успел сделать много добрых дел. 
+                <br><br> <b>Наша миссия</b>  заключается в предоставлении убежища и помощи безнадзорным животным, обеспечении их медицинского
+                ухода, стерилизации и передаче их в заботливые дома.</p>
+            <img src="/resources/o_nas2.jpg" alt="О нас 2" class="image2">
+            <button class="select-button" onclick="window.location.href='/html/pitomcy.html'">Выбрать мемасик</button>
+        </div>
+    </div>
+    <div class="block3">
+        <h1 id="third">Наши основные помощники</h1>
+        <p id="text3">Наши партнёры, которые на постоянной основе оказывают значительную поддержку для наших мемасиков!</p>
+        <div class="images-row">
+            <div class="company" id="Royal_sponsor" data-title="Royal Canin">
+            <img src="/resources/sponsor1.jpg" alt="Royal Canin">
+        </div>
+        <div class="company" id="Alfa_sponsor" data-title="Девять жизней">
+            <img src="/resources/sponsor2.jpg" alt="Альфа-вет">
+        </div>
+        <div class="company" id="Betera_sponsor" data-title="BETERA">
+            <img src="/resources/sponsor3.jpeg" alt="Betera">
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo"></div>
+        <p class="footer-text bold">Остались вопросы?</p>
+        <p class="footer-text">+375 (29) 932-11-32</p>
+        <p class="footer-text small">© «Мемный приют», 2024</p>
+        <p class="social-media">Мы в социальных сетях</p>
+        <div class="social-icons">
+            <img src="/resources/вк.png" alt="ВКонтакте" width="35" height="35">
+            <img src="/resources/инст.png" alt="Instagram" width="35" height="35">
+            <img src="/resources/фейс.png" alt="Facebook" width="35" height="35">
+        </div>
+    </footer>
+    <script src="/script/about_us.js"></script>
+    <script src="/script/log_in_out.js"></script>
+    <script src="https://kit.fontawesome.com/bfea7c3f65.js" crossorigin="anonymous"></script>
+    <script>
+        var device = window.devicePixelRatio;
+        if (device == 1.25) {
+            document.documentElement.classList.add('laptop');
+        } else if (device == 1.0) {
+            document.documentElement.classList.add('desktop');
+        }
+        else if (device == 1.5){
+            document.documentElement.classList.add('laptop2');
+        }
+        </script>
+</body>
+</html>

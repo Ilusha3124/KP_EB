@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Питомцы</title>
+    <link rel="stylesheet" href="/css/pitomcy.css"> 
+    <link rel="stylesheet" href="/css/log_in_out.css"> 
+    <link rel="icon" href="/resources/лого.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/html/main page.html">
+            <div class="logo"></div>
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="/html/main page.html">Главная</a></li>
+                <li class="active"><a href="/html/pitomcy.html">Питомцы</a></li>
+                <li><a href="/html/howHelp.html">Как помочь</a></li>
+                <li><a href="/html/contacts.html">Контакты</a></li>
+                <li><a href="/html/about_us.html">О нас</a></li>
+            </ul>
+            <i class="fa-regular fa-circle-user" id="log" style="cursor: pointer;"></i>
+        </nav>
+        <span id="userStatus" class="user-status" style="display: none;">Гость</span>
+    </header>
+    <div id="authModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <span class="custom-close-btn-auth">&times;</span> <!-- Класс для кнопки закрытия authModal -->
+            <h2 id="auth">Авторизация</h2>
+            <form id="authForm">
+                <label for="authEmail" class="text_log_ema">Email:</label>
+                <input type="email" id="authEmail" name="email" placeholder="Введите ваш Email" required>
+                <br><br>
+                <label for="authPassword" class="text_log_pass">Пароль:</label>
+                <input type="password" id="authPassword" name="password" placeholder="Пароль" required>
+                <br><br>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Модальное окно для управления аккаунтом -->
+    <div id="userModal" class="custom-modal" style="display:none;">
+        <div class="custom-modal-content">
+            <span class="custom-close-btn-user">&times;</span> <!-- Класс для кнопки закрытия userModal -->
+            <h2 id="user_inf">Информация о пользователе</h2>
+            <p id="userName">Имя пользователя</p>
+            <p id="userEmail">Email: </p> <!-- Новый элемент для отображения email -->
+            <h2 id="korzina">Корзина лайков</h2>
+            <img src="/resources/add_to_favorites_8ucq01fczrmu.svg" id= "iconnn" alt="Icon" width="45" height="45">
+            <ul id="likedPetsList"></ul>
+            <button id="logoutButton">Выйти</button>
+        </div>
+    </div>
+    <div class="main">
+            <p id="first-text">Мы всегда готовы ответить на ваши вопросы и помочь вам принять верное решение.</p>
+            <p id="second-text">Если вам понравилось какое-то животное и вы хотите узнать больше или рассмотреть возможность его усыновления, свяжитесь с нами.</p>
+        <div class = "filter_search">
+        <div class="filter-container">
+            <label for="filter-select">Фильтр:</label>
+            <select id="filter-select">
+                <option value="all">Все</option>
+                <option value="cats">Коты</option>
+                <option value="dogs">Собаки</option>
+                <option value="younger">Младше года</option>
+                <option value="older">Старше года</option>
+            </select>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Поиск мемчика по имени">
+        </div>
+    </div>
+        <div class="photos-grid">
+            <div class="photo" data-type="cat" data-description="Этот великолепный молодой кот с внимательным взглядом и неповторимым характером идеально подходит для роли в вашем доме. 
+            Он является настоящим мастером наблюдения за окружающим миром, никогда не упуская из виду ни одной мелочи. 
+            С КотоБлюпом в вашем доме вы всегда будете чувствовать себя под защитой его бдительности и заботы."
+            data-gender="Мальчик" data-age="11 месяцев" data-age1="younger">
+                <input type="checkbox" id="heart-checkbox1" class="heart-checkbox">
+        <label for="heart-checkbox1" class="heart-label"></label>
+                <img src="/resources/pitomec1.jpg" alt="Фото 1">
+                <div class="overlay">
+                    <h2>КотоБлюп</h2>
+                    <p>Наблюдательный Босс </p>
+                </div></div>
+            <div class="photo" data-type="dog" data-description="Глазки-Милашки - это настоящая красавица среди собак! Ее взгляд обладает невероятной магией, способной покорить сердца даже самых безразличных. Она обладает великолепной внешностью и мягким, приветливым характером, который сделает ее идеальным другом для всей семьи."
+            data-gender="Девочка" data-age="3 года" data-age1="older">
+                <input type="checkbox" id="heart-checkbox2" class="heart-checkbox">
+        <label for="heart-checkbox2" class="heart-label"></label>
+                <img src="/resources/pitomec2.jpg" alt="Фото 2">
+                <div class="overlay">
+                    <h2>Глазки-Милашки</h2>
+                    <p>У этой девочки "взгляд-магнит"</p>
+                </div></div>
+            <div class="photo" data-type="cat" data-description="КатПризма - это загадочный кот с узкими зрачками, который словно виртуозно играет своим внешним видом. Его странный, но привлекательный взгляд создает ощущение таинственности и непостижимости."
+            data-gender="Мальчик" data-age="2 года" data-age1="older">
+                <input type="checkbox" id="heart-checkbox3" class="heart-checkbox">
+        <label for="heart-checkbox3" class="heart-label"></label>
+                <img src="/resources/pitomec3.jpg" alt="Фото 3">
+                <div class="overlay">
+                    <h2>КатПризма</h2>
+                    <p>Узкоглазый виртуоз</p>
+                </div></div>
+            <div class="photo" data-type="dog" data-description=" Шмель - это яркий представитель собачьего мира с ярким рыжим мехом и дерзким характером. Он словно мастер рандомных приключений, готовый исследовать мир вокруг себя с неутомимым энтузиазмом."
+            data-gender="Мальчик" data-age="1.5 года" data-age1="older">
+                <input type="checkbox" id="heart-checkbox4" class="heart-checkbox">
+        <label for="heart-checkbox4" class="heart-label"></label>
+                <img src="/resources/pitomec4.jpg" alt="Фото 4"> <div class="overlay">
+                <h2> Шмель</h2>
+                <p>Мастер рандомных приключений</p>
+            </div></div>
+            <div class="photo" data-type="cat" data-description=" Веерочек - это маленький котёнок с необычным талантом. Он обладает невероятной способностью создавать вихри, маша лапкой в воздухе. Его игривый и забавный нрав делает его настоящей звездой среди маленьких котят."
+            data-gender="Мальчик" data-age="3 месяца" data-age1="younger">
+                <input type="checkbox" id="heart-checkbox5" class="heart-checkbox">
+        <label for="heart-checkbox5" class="heart-label"></label>
+                <img src="/resources/pitomec5.jpg" alt="Фото 5"> <div class="overlay">
+                <h2>Веерочек</h2>
+                <p>Махач лапой, создающий вихрь!</p>
+            </div></div>
+            <div class="photo" data-type="dog" data-description="Художница - это изысканная девочка, которая словно создана для гламурных фотосессий. В её окраске шерсти сливаются три прекрасных цвета, создавая уникальный и неповторимый образ. Её взгляд наполнен утонченной грацией и тайны."
+            data-gender="Девочка" data-age="7 месяцев" data-age1="younger">
+                <input type="checkbox" id="heart-checkbox6" class="heart-checkbox">
+        <label for="heart-checkbox6" class="heart-label"></label>
+                <img src="/resources/pitomec6.jpg" alt="Фото 6">
+                <div class="overlay">
+                    <h2>Художница</h2>
+                    <p> Шик и стиль в каждом волоске!</p>
+                </div></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo"></div>
+        <p class="footer-text bold">Остались вопросы?</p>
+        <p class="footer-text">+375 (29) 932-11-32</p>
+        <p class="footer-text small">© «Мемный приют», 2024</p>
+        <p class="social-media">Мы в социальных сетях</p>
+        <div class="social-icons">
+            <img src="/resources/вк.png" alt="ВКонтакте" width="35" height="35">
+            <img src="/resources/инст.png" alt="Instagram" width="35" height="35">
+            <img src="/resources/фейс.png" alt="Facebook" width="35" height="35">
+        </div>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-description"></p>
+            <div id="modal-description-wrapper">
+                <p id="modal-more-description"></p>
+                <h3 id="modal-note" style="color: #22c770;">Примечание</h3> <!-- Устанавливаем цвет подзаголовка -->
+                <p id="modal-gender"></p>
+                <p id="modal-age"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var device = window.devicePixelRatio;
+        if (device == 1.25) {
+            document.documentElement.classList.add('laptop');
+        } else if (device == 1.0) {
+            document.documentElement.classList.add('desktop');
+        }
+        else if (device == 1.5){
+            document.documentElement.classList.add('laptop2');
+        }
+        </script>
+        <script src="https://kit.fontawesome.com/bfea7c3f65.js" crossorigin="anonymous"></script>
+    <script src="/script/pitomcy.js"></script>
+    <script src="/script/log_in_out.js"></script>
+</body>
+</html>

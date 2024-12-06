@@ -1,0 +1,234 @@
+#log {
+    background-position: center;
+    border: none;
+    position: absolute;
+    left: 78%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: black;
+    transition: transform 0.2s ease, color 0.2s ease; /* Плавные переходы для анимации */
+}
+
+#log:hover {
+    color: #22c770; /* Изменение цвета при наведении */
+   
+}
+
+#log:active {
+    color: #1c8452; /* Цвет иконки при нажатии */
+    
+}
+
+.custom-modal {
+    display: none; 
+    position: fixed;
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+/* Стиль содержимого модального окна */
+.custom-modal-content {
+    background-color: #fff; 
+    margin: 15% auto; 
+    padding: 15px;
+    border: 1px solid #888;
+    width: 350px; 
+    border-radius: 8px; 
+    text-align: center;
+    position: relative; 
+}
+
+/* Стиль кнопки закрытия */
+.custom-close-btn-auth {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.custom-close-btn-auth:hover,
+.custom-close-btn-auth:focus {
+    color: #000; /* Цвет при наведении */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль кнопки закрытия */
+.custom-close-btn-user {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.custom-close-btn-user:hover,
+.custom-close-btn-user:focus {
+    color: #000; /* Цвет при наведении */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для формы */
+.custom-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#auth{
+    margin-top: -5px;
+}
+
+.text_log_ema{
+    margin-right: 245px;
+    margin-top: 5px;    
+}
+
+.text_log_pass{
+    margin-right: 225px;
+    margin-top: 5px;
+}
+
+#korzina{
+    margin-right: 25px ;
+}
+
+#iconnn{
+    display: flex;
+    margin-top: -65px;
+    float: right;
+    margin-right: 15px;
+}
+
+#likedPetsList {
+    list-style: none; /* Убираем маркеры */
+    padding: 0;
+    margin: 20px;
+    max-height: 285px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#likedPetsList li {
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+#likedPetsList li:last-child {
+    border-bottom: none; /* Убираем нижнюю границу у последнего элемента */
+}
+
+#likedPetsList li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#likedPetsList li::before {
+    width: 18px;
+    height: 18px;
+}
+
+#likedPetsList li:hover::before {
+    filter: brightness(0.8); /* При наведении изменяем цвет иконки */
+}
+
+/* Кнопка отправки формы */
+button[type="submit"] {
+    background-color: #22c770;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #1c8452;
+}
+#logoutButton{
+    background-color: #22c770;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+#logoutButton:hover {
+    background-color: #1c8452;
+}
+
+#user_inf{
+    margin-top: -15px;
+}
+
+.user-status {
+    font-size: 18px; /* Размер шрифта для статуса */
+    color: #000; /* Цвет текста */
+    display: none; /* Скрываем по умолчанию */
+}
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.custom-modal-content {
+    background: white;
+    padding: 20px;
+    margin: 15% auto;
+    width: 300px;
+}
+.custom-close-btn {
+    cursor: pointer;
+}
+#userStatus {
+    display: inline; /* Делаем видимым по умолчанию */
+    margin-right: 150px;
+}
+#userName, #userEmail {
+    font-size: 18px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    padding: 8px; /* Внутренние отступы */
+
+    transition: background 0.3s; /* Плавный переход для фона */
+}

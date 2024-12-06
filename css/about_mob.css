@@ -1,0 +1,257 @@
+.header {
+    background-color: #E0DD1D;
+    color: #fff;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px; 
+}
+
+#sada{
+    margin-left: -20px;
+    margin-top: -45px;
+}
+
+.navigation-image {
+    margin-right: 20px;
+    width: 40px; /* Примерные размеры */
+    height: 50px; /* Примерные размеры */
+    cursor: pointer; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-header {
+    background-color: #E0DD1D;
+    width: 100%;
+    height: 70px;
+}
+
+  .close {
+    position: absolute;
+    color: #0A0903;
+    font-size: 48px;
+    font-weight: bold;
+    right: 25px;
+    cursor: pointer; 
+  }
+  .logo2{
+    margin-top: 13px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px; 
+  }
+
+  a{
+    width: 120px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 0px;
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main {
+        padding-top: 110px; /* Увеличиваем отступ сверху */
+        background-image: url('/resources/output-onlinepngtools\ \(2\).png'); /* Ссылка на фоновое изображение */
+        background-size: cover; /* Сохраняем размер фонового изображения */
+        background-repeat: no-repeat; /* Запрещаем повторение фонового изображения */
+        background-position: center; /* Центрируем фоновое изображение */
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #main-image {
+        width: 330px; /* Ширина блока изображения */
+        height: 210px; /* Высота блока изображения */
+        border: 1px solid black; /* Добавление рамки вокруг изображения */
+    }
+
+    #first{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 35px;
+    }
+
+    #main-text {
+        margin-top: 20px;
+    }
+
+    #image2 {
+        width: 330px; /* Ширина блока изображения */
+        height: 210px; /* Высота блока изображения */
+        border: 1px solid black; /* Добавление рамки вокруг изображения */
+        margin-top: 35px;
+    }
+
+    #second{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 35px;
+    }
+
+    #text2 {
+        margin-top: 20px;
+    }
+
+    .select-button:hover {
+        background-color: #22c770;
+        border-color: #20a160; /* Изменяем цвет рамки при наведении */
+        color: white; /* Изменяем цвет текста при наведении */
+    }
+    
+    .select-button:active {
+        background-color: #1c8452; /* Изменяем цвет фона при нажатии */
+        border-color: #1c8452; /* Изменяем цвет рамки при нажатии */
+    }
+    
+    .select-button {
+        background-color: #22c770;
+        border-radius: 10px;
+        padding: 15px 40px;
+        border: 2px solid black;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    #third{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 35px;
+    }
+
+    #text3 {
+        margin-top: 20px;
+    }
+
+    #sponsor1{
+    margin-top: 20px;
+    width: 270px;
+    height: 180px;
+    border: 1px solid black;
+    }
+
+    #sponsor2{
+        margin-top: 35px;
+        width: 270px;
+        height: 180px;
+        border: 1px solid black;
+        }
+
+    #sponsor3{
+        margin-top: 35px;
+        width: 270px;
+        height: 180px;
+        border: 1px solid black;
+        margin-bottom: 35px;
+        }
+
+    footer {
+        background-color: #000000;
+        color: #fff;
+        width: 100%;
+        height: 150px;
+        bottom: 0;
+    }
+
+    .footer-text {
+        color: white;
+        margin-left: 15px;
+        font-size: 12px;
+        margin-top: -5px;
+    }
+    
+    .footer-text.bold {
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 5px;
+        color: #22c770;
+    }
+    
+    .footer-text.small {
+        right: 30px;
+        font-size: 10px;
+        color: white;
+        margin-top: 55px;
+        position: absolute;
+    }
+    
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+        background-image: url('/resources/лого.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: none;
+        position: absolute;
+        margin-top: 20px;
+        right: 50px;
+    }
+    
+    .social-media {
+        position: absolute;
+        color: #22c770;
+        font-weight: bold;
+        font-size: 16px;
+       margin-left: 15px;
+        margin-top: 0px;
+    }
+    
+    .social-icons {
+        margin-left: 15px;
+        margin-top: 45px;
+    }
+    
+    .social-icons img {
+        margin-right: 35px;
+    }

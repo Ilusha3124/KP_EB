@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/resources/лого.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Как помочь</title>
+    <link rel="stylesheet" href="/css/howhelp.css"> 
+    <link rel="stylesheet" href="/css/log_in_out.css"> 
+</head>
+<body>
+    <header class="header">
+        <a href="/html/main page.html">
+            <div class="logo"></div>
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="/html/main page.html">Главная</a></li>
+                <li><a href="/html/pitomcy.html">Питомцы</a></li>
+                <li class="active"><a href="/html/howHelp.html">Как помочь</a></li>
+                <li><a href="/html/contacts.html">Контакты</a></li>
+                <li><a href="/html/about_us.html">О нас</a></li>
+            </ul>
+            <i class="fa-regular fa-circle-user" id="log" style="cursor: pointer;"></i>
+        </nav>
+        <span id="userStatus" class="user-status" style="display: none;">Гость</span>
+    </header>
+    
+<!-- Модальное окно для авторизации -->
+<div id="authModal" class="custom-modal">
+    <div class="custom-modal-content">
+        <span class="custom-close-btn-auth">&times;</span> <!-- Класс для кнопки закрытия authModal -->
+        <h2 id="auth" style="text-align: center; margin-bottom: 25px;">Авторизация</h2>
+        <form id="authForm">
+            <label for="authEmail" class="text_log_ema">Email:</label>
+            <input type="email" id="authEmail" name="email" placeholder="Введите ваш Email" required>
+            <br><br>
+            <label for="authPassword" class="text_log_pass">Пароль:</label>
+            <input type="password" id="authPassword" name="password" placeholder="Пароль" required>
+            <br><br>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+<!-- Модальное окно для управления аккаунтом -->
+<div id="userModal" class="custom-modal" style="display:none;">
+    <div class="custom-modal-content" style="text-align: center;">
+        <span class="custom-close-btn-user">&times;</span> <!-- Класс для кнопки закрытия userModal -->
+        <h2 id="user_inf" style="text-align: center;">Информация о пользователе</h2>
+        <p id="userName" style="width: 80%; margin-left: 20px;">Имя пользователя</p>
+        <p id="userEmail" style="margin-left: 20px;">Email: </p> <!-- Новый элемент для отображения email -->
+        <h2 id="korzina" style="margin-left: 40px;">Корзина лайков</h2>
+        <img src="/resources/add_to_favorites_8ucq01fczrmu.svg" id= "iconnn" alt="Icon" width="45" height="45">
+        <ul id="likedPetsList"></ul>
+        <button id="logoutButton">Выйти</button>
+    </div>
+</div>
+    <div class="main">
+        <div class="block" id="block1">
+            <img src="/resources/help1.png" alt="Изображение 1" class="block-image" id="image1">
+            <div class="block-content">
+                <h2 id="title1">Финансовая помощь</h2>
+                <p id="text1">Благодаря Вашей финансовой помощи мы кормим, лечим, обрабатываем и устраиваем на передержки спасенных с улиц животных, которые потом находят себе постоянный дом!</p>
+                <h2 id="title1_1">Оказать помощь мемчикам:</h2>
+                <p id="text1_1">Через систему ЕРИП (код хххххх) </p>
+                <p id="text1_2">Перевод на банковскую карту (ХХХХ ХХХХ ХХХХ ХХХХ ММ/ГГ) </p>
+            </div>
+        </div>
+    
+        <div class="block" id="block2">
+            <img src="/resources/help2.jpg" alt="Изображение 2" class="block-image" id="image2">
+            <div class="block-content">
+                <h2 id="title2">Помощь передержкой, автопомощь</h2>
+                <p id="text2">Иногда не то что неделя, а одна ночь бесплатного содержания животного у себя дома, на кухне или застекленном балконе, оказывается для животного спасительной</p>
+                <p id="text2_1">Бездомные животные часто болеют,  бывают ранены, и их надо перевозить в клинику.
+                </p>
+            </div>
+        </div>
+    
+        <div class="block" id="block3">
+            <img src="/resources/help3.jpg" alt="Изображение 3" class="block-image" id="image3">
+            <div class="block-content">
+                <h2 id="title3">Помощь кормом, лекарствами</h2>
+                <p id="text3">Всегда актуальна помощь лекарствами!  Иногда простые препараты стоят неподъемно дорого, часто лекарства банально трудно найти.</p>
+                <p id="text3_1">Корм нашим питомцам нужен каждый день! Это может быть сухой корм или консервы для животных, корм для кошек или собак.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo"></div>
+        <p class="footer-text bold">Остались вопросы?</p>
+        <p class="footer-text">+375 (29) 932-11-32</p>
+        <p class="footer-text small">© «Мемный приют», 2024</p>
+        <p class="social-media">Мы в социальных сетях</p>
+        <div class="social-icons">
+            <img src="/resources/вк.png" alt="ВКонтакте" width="35" height="35">
+            <img src="/resources/инст.png" alt="Instagram" width="35" height="35">
+            <img src="/resources/фейс.png" alt="Facebook" width="35" height="35">
+        </div>
+    </footer>
+    <script>
+        var device = window.devicePixelRatio;
+        if (device == 1.25) {
+            document.documentElement.classList.add('laptop');
+        } else if (device == 1.0) {
+            document.documentElement.classList.add('desktop');
+        }
+        else if (device == 1.5){
+            document.documentElement.classList.add('laptop2');
+        }
+        </script>
+          <script src="/script/log_in_out.js"></script>
+        <script src="https://kit.fontawesome.com/bfea7c3f65.js" crossorigin="anonymous"></script>
+</body>
+</html>

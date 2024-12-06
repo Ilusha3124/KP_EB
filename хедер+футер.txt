@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш заголовок</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="logo"></div>
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="/html/main page.html">Главная</a></li>
+
+                <li><a href="#">Питомцы</a></li>
+                <li><a href="#">Как помочь</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+    
+    </div>
+    <footer>
+        <div class="footer-logo"></div>
+        <p class="footer-text bold">Остались вопросы?</p>
+        <p class="footer-text">mem_priut@gmail.com</p>
+        <p class="footer-text">+375 (29) 932-11-32</p>
+        <p class="footer-text small">© «Мемный приют», 2024</p>
+        <p class="social-media">Мы в социальных сетях</p>
+        <div class="social-icons">
+            <img src="/resources/вк.png" alt="ВКонтакте" width="35" height="35">
+            <img src="/resources/инст.png" alt="Instagram" width="35" height="35">
+            <img src="/resources/тг.png" alt="Telegram" width="35" height="35">
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+.header {
+    background-color: #C9C621;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.header .menu ul li.active a {
+    border-bottom: 2px solid #000; /* Линия под текстом */
+    padding-bottom: 5px; /* Отступ для линии */
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 30px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.menu ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0px;
+}
+
+.menu ul li:last-child {
+    margin-right: 770px;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    pointer-events: none;
+}
+
+.footer-text {
+    color: #22c770;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-left: 195px;
+}
+
+.footer-text.bold {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.footer-text.small {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('/resources/лого.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media {
+    position: absolute;
+    color: #22c770;
+    font-weight: bold;
+    font-size: 18px;
+    right: 195px;
+    top: 35px;
+}
+
+.social-icons {
+    position: absolute;
+    top: 80px;
+    right: 180px;
+}
+
+.social-icons img {
+    margin-right: 40px;
+}
+
+.main {
+    width: 100%;
+    height: 1500px;
+    padding-top: 240px;
+    background-image: url('/resources/output-onlinepngtools\ \(2\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 200px;
+    display: flex; 
+    align-items: flex-start; 
+}
+
+
+body,
+h1,
+p,
+footer {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    background-image: url('/resources/9kGKEdwY_u-8yHY1U3zZG-transformed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    margin-left: 180px;
+   
+}
+
+
+
+
+
+
+
+
+
